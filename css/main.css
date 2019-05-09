@@ -1976,6 +1976,9 @@ footer {
       display: block;
       margin: 20px auto; }
 
+img.qr-code {
+  height: 10em; }
+
 @media (max-width: 1499px) {
   .container {
     max-width: 1170px; }

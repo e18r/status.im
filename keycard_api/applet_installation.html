@@ -206,7 +206,7 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div class="editor-content">
-								<h1 id="Preparing-the-card" class="article-heading"><a href="#Preparing-the-card" class="headerlink" title="Preparing the card"></a>Preparing the card<a class="article-anchor" href="#Preparing-the-card" aria-hidden="true"></a></h1><p>If you got a Keycard and you are integrating it in your project, you will most likely want to reset the applet status completely for testing purposes. This is done by reinstalling the applet, which can be accomplished using the <a href="https://github.com/status-im/keycard-installer-android/releases" target="_blank" rel="noopener">Keycard Installer for Android</a>.</p>
+								<h1 id="Preparing-the-card" class="article-heading"><a href="#Preparing-the-card" class="headerlink" title="Preparing the card"></a>Preparing the card<a class="article-anchor" href="#Preparing-the-card" aria-hidden="true"></a></h1><p>If you got a Keycard and you are integrating it in your project, you will most likely want to reset the applet status completely for testing purposes. This is done by reinstalling the applet, which can be accomplished using the <a href="https://github.com/status-im/keycard-cli" target="_blank" rel="noopener">Keycard CLI</a>.</p>
 <p>Upgrading the applet is also accomplished with the installer and also involves deleting the current version. The latest version of the installer always ships with the latest version of the applet.</p>
 <p>The installer has a simple interface, when you open it, you see a white screen and a few buttons. Select the operation you want to perform, then bring the card near to the NFC reader of your phone and wait until the operation is complete. Make sure NFC is turned on.</p>
 <p>There are two operations used to install the applet. One is “Install Secure”, which installs the applet without sending the INIT command, so the installed applet is not initialized. The other option is “Install with test PIN/PUK”. This installs the applet and sets PIN to “000000”, PUK to “123456789012” and Pairing Password to “KeycardTest”. This second option is useful if you want to quickly test interaction without having to initialize the card in your application.</p>
@@ -232,7 +232,7 @@
 
 							</div>
 							<div class="docs-footer">
-								Last update: 2019-02-14
+								Last update: 2019-05-09
 								
 							</div>
 						</div>
@@ -422,6 +422,33 @@
     <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.6/build/highlight.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js"></script>
-    <script type="text/javascript" src="/js/main.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    <script type="text/javascript" src="/js/main.js"></script>
+
+    <script>
+      /* This POSTs to the clicks-api service to click numbers of downloads of different releases */
+      $(document).ready(function () {
+        $('a.app-download').click(function (ev) {
+          let downloadType = $(this).closest('a').attr('id')
+          $.post(`https://clicks.status.im/clicks/${downloadType}`)
+        });
+      });
+    </script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config("");
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
 </body>
 </html>
