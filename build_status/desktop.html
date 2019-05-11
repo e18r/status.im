@@ -211,8 +211,9 @@
 cd status-react
 make release-desktop
 </code></pre>
-<p>For a Windows build cross-compiled from Linux, replace <code>make release-desktop</code> with <code>make release-windows-desktop</code>.</p>
-<h1 id="Development-environment-setup" class="article-heading"><a href="#Development-environment-setup" class="headerlink" title="Development environment setup"></a>Development environment setup<a class="article-anchor" href="#Development-environment-setup" aria-hidden="true"></a></h1><h2 id="To-install-react-native-cli-with-desktop-commands-support" class="article-heading"><a href="#To-install-react-native-cli-with-desktop-commands-support" class="headerlink" title="To install react-native-cli with desktop commands support"></a>To install react-native-cli with desktop commands support<a class="article-anchor" href="#To-install-react-native-cli-with-desktop-commands-support" aria-hidden="true"></a></h2><pre><code class="bash">git clone https://github.com/status-im/react-native-desktop.git
+<p>Note: for a Windows build cross-compiled from Linux, replace <code>make release-desktop</code> with <code>make release-windows-desktop</code>.</p>
+<h1 id="Development-environment-setup" class="article-heading"><a href="#Development-environment-setup" class="headerlink" title="Development environment setup"></a>Development environment setup<a class="article-anchor" href="#Development-environment-setup" aria-hidden="true"></a></h1><h2 id="To-install-react-native-cli-with-desktop-commands-support" class="article-heading"><a href="#To-install-react-native-cli-with-desktop-commands-support" class="headerlink" title="To install react-native-cli with desktop commands support"></a>To install react-native-cli with desktop commands support<a class="article-anchor" href="#To-install-react-native-cli-with-desktop-commands-support" aria-hidden="true"></a></h2><p>Comment out the <code>&quot;react-native-cli-2.0.1&quot; = nodeEnv.buildNodePackage</code> block in <a href="https://github.com/status-im/status-react/blob/develop/nix/global-node-packages/output/node-packages.nix" target="_blank" rel="noopener">https://github.com/status-im/status-react/blob/develop/nix/global-node-packages/output/node-packages.nix</a> and run:</p>
+<pre><code class="bash">git clone https://github.com/status-im/react-native-desktop.git
 cd react-native-desktop/react-native-cli
 npm update
 npm install -g
@@ -224,7 +225,7 @@ npm install -g
  make startdev-desktop # note: wait until sources are compiled
 </code></pre>
 </li>
-<li><p>In separate terminal tab: <code>make react-native</code> (note: it starts react-native packager)</p>
+<li><p>In separate terminal tab: <code>make react-native-desktop</code> (note: it starts react-native packager)</p>
 </li>
 <li>In separate terminal tab: <code>make desktop-server</code> (note: it runs <code>node ./ubuntu-server.js</code>)</li>
 <li>In separate terminal tab: <code>make run-desktop</code></li>
@@ -291,7 +292,7 @@ rd /S /Q %LOCALAPPDATA%\Status
 
 							</div>
 							<div class="docs-footer">
-								Last update: 2019-04-27
+								Last update: 2019-05-11
 								
 							</div>
 						</div>
