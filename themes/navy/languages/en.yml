@@ -104,6 +104,179 @@ site:
       contributors:
         title: "Top Community Contributors"
         link: "Join the Status Team. See all Open Position"
+    developers:
+      intro:
+        subtitle: "An Open Source Community"
+        title: "Development"
+        description: "Welcome to the Status Developer Portal. Find everything you need to start contributing to Status, building your own DApps, or extending your work with the natives features of Status."
+      quick-nav-sub:
+        link-1: "Contribute to Status"
+        link-2: "Build DApps"
+        link-3: "Extend DApps"
+        link-4: "Developer Resources"
+        link-5: "Github"
+      contribute-to-status: 
+        title: "Contribute to Status"
+        description: "Get set up with this Contributor Guide."
+        link: "Quick Start Guide"
+        status-react:
+          title: "Status-React"
+          description: "Written in Clojure - this is where we handle interactions between Whisper and the app; between the wallet, the user and any Distributed Application (DApp) that they want to access; and where the UI logic lives."
+          link: "View Repository"
+        status-go:
+          title: "Status-Go"
+          description: "Written in Go - this is where all of the blockchain logic, transactions, and light client work we do lives."
+          link: "View Repository"
+        open-issues-status-react:
+          title: "Open Issues Status-React"
+          link: "View all open issues"
+        open-issues-status-go: 
+          title: "Open Issues Status-Go"
+          link: "View all open issues"
+        earn-crypto: 
+          title: "Earn crypto for completing bounties"
+          description: "See the full list of technical bounties on"
+          link: "Gitcoin"
+        report-a-security-vulnerability: 
+          title: "Report a security vulnerability and fix it"
+          description: "Learn more about the"
+          link: "Bug bounty program"
+      development-dapp:
+        build-dapp:
+          title: "Build your own DApp"
+          description: "Get started with our tools and frameworks to build your own decentralized application."
+          link-1: "Optimize for mobile with the Javascript API"
+          link-2: "Build your own DApp with Embark"
+          link-3: "Access Web3 providers and detect Status"
+          link-4: "Submit your DApp to the Status DApp list"
+        extend-dapp:
+          title: "Extend your DApp"
+          description: "Extensions allow you to leverage the native of features of Status within your DApp."
+          link-1: "Introduction to Extensions"
+          link-2: "Tutorials"
+          link-3: "Examples & Existing Extensions"
+      development-resources:
+        contribute-support:
+          title: "Contribute Support"
+          link-1: "Write Documentation"
+          link-1-description: "Dive in and help write, edit, and fix the docs. Edits are all made via GitHub."
+          link-2: "Translate Documentation"
+          link-2-description: "We need help translating all of our documentation into your local language."
+          link-3: "Welcome New Contributors"
+          link-3-description: "Join the Status #introductions channel and help out new contributors and community members."
+          link-4: "Create Tutorials"
+          link-4-description: "Contact us and learn how you can have your tutorials featured in the docs and the Status blog."
+        developer-resources:
+          title: "Developer Resources"
+          link-1: "Github Repositories"
+          link-2: "Documentation"
+          link-3: "Embark"
+          link-4: "Tutorials"
+          link-5: "Nightly Builds"
+          link-6: "Blog"
+          link-7: "Listen to the latest core developer call"
+          link-8: "Check out the latest release notes"
+          link-9: "See the list of active swarms"
+      get-in-touch:
+        title: "Get in touch"
+        join-status:
+          link: "Join #status"
+          description: "General Status news and discussion."
+        join-status-core:
+          link: "Join #status-core"
+          description: "Public channel about core development."
+        join-introductions:
+          link: "Join #introductions"
+          description: "New to Status? Introduce yourself and say hello!"
+        contact-us:
+          link: "Contact us"
+          description: "For everything else, email us directly."
+    educators:
+      intro:
+        subtitle: "An Open Source Community"
+        title: "Education"
+        description: "Everyone is welcome to help educate others on how to build Status, use Status, get started in the community, or even share their own experiences with the project."
+      quick-nav-sub:
+        link-1: "Educate and create"
+        link-2: "Translate"
+        link-3: "Educator Resources"
+        link-4: "Github"
+      educate-contribute:
+        how-to-get-started:
+          title: "How to Get Started"
+          link-1: "Community Member Beginners Guide"
+          link-1-description: "Check out this guide created by community member, Warsoverjohn."
+          link-2: "Glossary"
+          link-2-description: "Refer to this open source doc for terms, definitions, resources and concepts. Feel free to add to it."
+          link-3: "FAQ’s"
+          link-3-description: "Here is an ongoing list of frequently asked questions from everyone in the Status community."
+        create:
+          title: "Create"
+          link-1: "Create Non-Technical Tutorials"
+          link-1-description: "Help newcomers set up their account and navigate the Status app and community. Contact us to have your tutorial shared on the blog."
+          link-2: "Create Technical Tutorials"
+          link-2-description: "Help developers build Status, build DApps, create an extension or anything else you would like to share. Contact us."
+          link-3: "Write a blog post"
+          link-3-description: "Share a story on the Status blog Become a publisher on the Status Blog"
+      translate:
+        title: "Translate"
+        description: "Help us localise Status into your language."
+        link-1: "Status Application"
+        link-2: "Status Website"
+        link-3: "Documentation"
+        link-4: "Blog Articles"
+      educator-resources:
+        title: "Educator Resources"
+        link-1: "Styleguide & Assets"
+        link-1-description: "Find the latest Styleguide along with branded assets, templates, and fonts."
+        link-2: "Discuss"
+        link-2-description: "Join long form discussion about all things Status."
+        link-3: "Tutorials"
+        link-3-description: "Learn how to build something or see some examples of other community made tutorials."
+        link-4: "Blog"
+        link-4-description: "Check out the latest Status news and updates."
+        link-5: "Nightlies"
+        link-5-description: "Install and test the latest nightly build for mobile and desktop."
+        link-6: "Check out the latest release notes"
+        link-7: "See the list of active swarms"
+        link-8: "See full list of Status Public Channels"
+      get-in-touch:
+        join-statusphere:
+          link: "Join #statusphere"
+          description: "A growing community of Status Ambassadors and enthusiasts"
+    community:
+      intro:
+        subtitle: "An Open Source Community"
+        title: "Community Groups"
+        description: "There are a number of both Status run and community organized groups within Status. Join an existing group or start your own group based on your personal interests."
+        link-1: "See the groups below"
+        link-2: "Submit a new group"
+      community-groups:
+        account-group-1:
+          link: "#Status-ambassadors"
+          description: "A group of people dedicated to helping, contributing, and building the Status community."
+          occupation: "Organizer"
+          name: "Us"
+        account-group-2:
+          link: "#Status-Korean"
+          description: "A group of passionate developers, makers, creators, and enthusiasts based in South Korea."
+          occupation: "Organizer"
+          name: "Jinho Jang"
+        account-group-3:
+          link: "#status-spanish"
+          description: "Status en Español"
+          occupation: "Organizer"
+          name: "Lalo Garza"
+        account-group-4:
+          link: "#status-chinese"
+          description: "Status in Chinese"
+          occupation: "Organizer"
+          name: "Steven Zhu"
+        account-group-5:
+          link: "#philosophers"
+          description: "What is the meaning of life?"
+          occupation: "Organizer"
+          name: "Aristotle"
   header:
     nav:
       features: "Features"
