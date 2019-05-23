@@ -277,6 +277,71 @@ site:
           description: "What is the meaning of life?"
           occupation: "Organizer"
           name: "Aristotle"
+  security:
+    intro:
+      title: "Secure By Design"
+      description-1: "Status aims to be a truly decentralized communication tool – eventually removing all third parties and minimizing the attack vectors for malicious actors."
+      description-2: "The true benefit of Web3 is the ability to transact and communicate on our own terms – without middle men. In order to enjoy this type of free communication, we must be confident that our messages, transactions, identities, and funds are safe and secure. Learn more about Status’ approach to security below."
+    security-at-status:
+      title: "Security at Status"
+      secure-inner-1:
+        title: "Secure Messaging"
+        description: "Messages are not censored, blocked, and they remain anonymous if the user chooses so. Only intended recipients are able to view messages and no metadata is leaked."
+      secure-inner-2:
+        title: "Secure Financial Transactions"
+        description: "Sending, storing, and receiving cryptocurrencies or tokens within the Status wallet is safe from attack. Private keys are never exposed. Transactions are only processed when initiated and confirmed by the owner of the private keys."
+      secure-inner-3:
+        title: "Secure Browsing"
+        description: "When browsing Web3, end user data and browsing information is not accessible by any third parties without consent. Any transactions made while using the Status browser implement the same security standards and best practices used in the Status wallet."
+    security-content:
+      content-1:
+        title: "Secure Identity"
+        description: "Your identity in Status starts with a locally generated cryptographic keypair, which is then protected via a password. That’s all that is required. The user then has the ability to add information to their profile to build up who they are in Status. At all times the user has full control over their information, and who has access to it. The end user can be as public or private as they want."
+      content-2:
+        title: "Peer-to-Peer Serverless Messaging"
+        description: "Status uses the Whisper protocol for peer-to-peer (p2p) communication, which means that there are no servers processing or storing your messages. Instead, Whisper relies on a network of peers to route messages to each other. Each message sent is broadcast to the entire network, and encrypted for only the intended recipient to open. The effect of every message flooding the network is known as dark routing, and protects not only the content of your messages but also metadata about where you are communicating from, to whom, etc. This is the highest standard of security and privacy in online messaging, and the Status team is researching more scalable and efficient means of delivering this standard."
+        link: "Learn more about Whisper"
+      content-3:
+        title: "End-to-End Encryption by Default"
+        description: "All private messages sent over Whisper are encrypted end-to-end by default. When you create a Status account, a cryptographic keypair is generated to encrypt your messages and stored locally on your device. When you add a new contact in Status, you exchange public keys so that that person can decrypt your messages when received over the network."
+      content-4:
+        title: "Perfect Forward Secrecy"
+        description: "PFS is a feature of specific key-agreement protocols which provide assurances that your session keys will not be compromised even if the private keys of the participants are compromised. Specifically, past messages cannot be decrypted by a third-party who manages to get a hold of a private key. It builds on the X3DH and Double Ratchet specifications from Open Whisper Systems, with some adaptations to operate in a decentralized environment. Perfect Forward Secrecy is an added layer of security for all of your 1:1 private chats."
+        link: "Learn more about PFS"
+      content-5:
+        title: "Serverless Account Creation"
+        description: "When you create a new account on Status, you will never be asked for third party verification such as an email or phone number. This means you can sign up for and create a Status account completely anonymously. When you create an account, it is simply you and your keys. This also means that two factor authentication and password recovery are not features within Status - so be sure to remember your password and mnemonic phrase and store them offline somewhere extremely safe."
+      content-6: 
+        title: "How are my keys stored?"
+        description-1: "Status will never use third party services for managing and storing your public and private keys. Once generated, the first BIP44 key is saved in a keystore json file locally on your device. This file is encrypted with the password you choose for your Status account and only accessible by the Status app. We prioritize storing sensitive information in secure hardware when it is available on your device."
+        description-2: "For an additional layer of security, we have introduced Keycard which serves as offline cold storage for private key management and their operations."
+        description-3: "For more information on Keycard, visit"
+        link: "keycard.status.im"
+      content-7:
+        title: "Secure Browsing"
+        description: "The Status browser is designed to keep the end user informed and their funds safe. Browser Privacy mode is enabled by default. This means that DApps will be required to ask permission before connecting to your wallet, and it may cause some DApps to break (if they are not compatible with this security measure). Finally, the Status browser implements EIP712 which aims to improve the usability of off-chain message signing for use on-chain. We are seeing growing adoption of off-chain message signing as it saves gas and reduces the number of transactions on the blockchain. Currently signed messages are an opaque hex string displayed to the user with little context about the items that make up the message."
+        link: "Learn more about the EIP"
+      content-8:
+        title: "How does Status protect my cryptocurrency?"
+        description: "Status is built with a non-custodial wallet, giving you full control over your funds without the use of a server. The private keys are stored in an encrypted manner on your device. Your money is under your control, and cannot be accessed by anyone without the private key. Therefore, if you lose your mnemonic phrase, you will never be able to restore access to your funds. So keep your private keys somewhere safely offline."
+      content-9:
+        title: "Signing Phrase to protect from phishing attacks"
+        description: "Status implements a signing phrase required to confirm and “sign” all transactions. The signing phrase is a 3 word phrase randomly generated for you and stored locally on your device that is presented each time you attempt to send a transaction. You will be presented your signing phrase and be required to accept it before a transaction will be confirmed. If you do not recognize your three words, or are not presented with the three words at all, cancel the transaction, log out of Status and report the issue to"
+        link: "security@status.im"
+      content-10:
+        title: "Rigorous Auditing"
+        description-1: "As we reach major milestones in development, after rounds of internal review and auditing, we reach out to industry leading, third-party auditing firms to verify our sanity, and double/triple check the work that we do. These security audits are not guarantees of security in the projects they pertain to. They are additional checks from objective third parties to help bolster confidence in the security of intended functionality."
+        description-2: "If you find a bug or vulnerability in our code, please report it to"
+        link: "security@status.im"
+      content-11:
+        title: "Educate yourself to stay safe"
+        description: "Decentralized, serverless products such as Status remove a number of unnecessary intermediaries, enabling you to chat, transact, and browse without fear of surveillance, censorship, and data leakage. This is because you are in control of your data and your own digital safety. Therefore, it is important you understand how to protect yourself. Learn more about how to stay safe with this Status Security Best Practice Guide."
+        link: "See the Best Practice Guide"
+    protect-yourself:
+      title: "Protect Yourself"
+      description: "Status is built with state of the art technology to ensure the product is a secure as possible. When it comes to navigating Web3, you are in control. See our list of security best practices and take control."
+      link-1: "Learn More"
+      link-2: " Join Status Security Channel"
   header:
     nav:
       features: "Features"
