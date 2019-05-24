@@ -36,16 +36,16 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Status - Coming to Grips with Status-react and Desktop">
     
-    <meta property="og:url" content="https://dev.status.im/guides/desktop_inline_eval.html">
+    <meta property="og:url" content="https://status.im/guides/desktop_inline_eval.html">
     
-    <meta property="og:image" content="https://dev.status.im/img/share.png">
+    <meta property="og:image" content="https://status.im/img/share.png">
     <meta property="article:publisher" content="https://www.facebook.com/ethstatus">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Status - Coming to Grips with Status-react and Desktop">
     
-    <meta name="twitter:url" content="https://dev.status.im/guides/desktop_inline_eval.html">
+    <meta name="twitter:url" content="https://status.im/guides/desktop_inline_eval.html">
     
-    <meta property="twitter:image" content="https://dev.status.im/img/share.png">
+    <meta property="twitter:image" content="https://status.im/img/share.png">
     <meta name="twitter:site" content="@ethstatus">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="628">
@@ -244,8 +244,8 @@ react-native run-desktop
 (cider-connect-cljs &#39;(:host &quot;localhost&quot; :port 7888)))
 </code></pre>
 <p>You evaluate this elisp code however you want. The goal of this post is just to show one possible way. I’ve rolled the above into a <a href="https://github.com/rcullito/emacsfiles/commit/4332d44c21cf264eb7c20bf9760c090dc17c08e9" target="_blank" rel="noopener">single defun</a> that I call when opening up emacs. </p>
-<p>Our <a href="https://status.im/build_status/desktop.html" target="_blank" rel="noopener">build docs</a> offers another great solution by using a <code>.dir-locals</code> file. Any solution is fair game, it’s just worth noting that an understanding of how all the pieces work together is crucial for how you go about configuring this last step.</p>
-<p>So, in order to run status-react, follow along via all the init steps outlined <a href="https://status.im/build_status/desktop.html" target="_blank" rel="noopener">here</a> and run “the big 4”, which are:</p>
+<p>Our <a href="https://status.im/build_status/desktop.html">build docs</a> offers another great solution by using a <code>.dir-locals</code> file. Any solution is fair game, it’s just worth noting that an understanding of how all the pieces work together is crucial for how you go about configuring this last step.</p>
+<p>So, in order to run status-react, follow along via all the init steps outlined <a href="https://status.im/build_status/desktop.html">here</a> and run “the big 4”, which are:</p>
 <pre><code class="bash">npm start
 node ubuntu-server
 make watch-desktop

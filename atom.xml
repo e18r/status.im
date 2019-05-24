@@ -5,9 +5,9 @@
   <subtitle>A new kind of tool for a new kind of internet</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://dev.status.im/"/>
+  <link href="https://status.im/"/>
   <updated>2019-01-25T03:20:16.512Z</updated>
-  <id>https://dev.status.im/</id>
+  <id>https://status.im/</id>
   
   <author>
     <name>Status</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Nimbus</title>
-    <link href="https://dev.status.im/news/2018/10/25/nimbus/"/>
-    <id>https://dev.status.im/news/2018/10/25/nimbus/</id>
+    <link href="https://status.im/news/2018/10/25/nimbus/"/>
+    <id>https://status.im/news/2018/10/25/nimbus/</id>
     <published>2018-10-25T00:00:00.000Z</published>
     <updated>2019-01-25T03:20:16.512Z</updated>
     

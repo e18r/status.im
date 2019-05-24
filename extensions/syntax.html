@@ -36,16 +36,16 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Status - Extensions Syntax">
     
-    <meta property="og:url" content="https://dev.status.im/extensions/syntax.html">
+    <meta property="og:url" content="https://status.im/extensions/syntax.html">
     
-    <meta property="og:image" content="https://dev.status.im/img/share.png">
+    <meta property="og:image" content="https://status.im/img/share.png">
     <meta property="article:publisher" content="https://www.facebook.com/ethstatus">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Status - Extensions Syntax">
     
-    <meta name="twitter:url" content="https://dev.status.im/extensions/syntax.html">
+    <meta name="twitter:url" content="https://status.im/extensions/syntax.html">
     
-    <meta property="twitter:image" content="https://dev.status.im/img/share.png">
+    <meta property="twitter:image" content="https://status.im/img/share.png">
     <meta name="twitter:site" content="@ethstatus">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="628">
@@ -239,8 +239,8 @@
  {:ephemeral     true
   :on-activation [on-activation]}}
 </code></pre>
-<h2 id="Hook-syntax" class="article-heading"><a href="#Hook-syntax" class="headerlink" title="Hook syntax"></a>Hook syntax<a class="article-anchor" href="#Hook-syntax" aria-hidden="true"></a></h2><p>Each <a href="https://status.im/extensions/extension_types.html" target="_blank" rel="noopener">hook type</a> requires specific details to be mapped and declared according to the hook’s specifications. </p>
-<p>To learn about the available hooks and their specifications, see <a href="https://status.im/extensions/extension_types.html" target="_blank" rel="noopener">extension types</a>.</p>
+<h2 id="Hook-syntax" class="article-heading"><a href="#Hook-syntax" class="headerlink" title="Hook syntax"></a>Hook syntax<a class="article-anchor" href="#Hook-syntax" aria-hidden="true"></a></h2><p>Each <a href="https://status.im/extensions/extension_types.html">hook type</a> requires specific details to be mapped and declared according to the hook’s specifications. </p>
+<p>To learn about the available hooks and their specifications, see <a href="https://status.im/extensions/extension_types.html">extension types</a>.</p>
 <p>This map is associated to a unique identifier, which follows the hook’s root identifier.</p>
 <p>For example:</p>
 <pre><code class="clojure">{hooks/command.example-command
@@ -258,7 +258,7 @@
  [text &quot;Hello&quot;]
  [text {:style {:color &quot;red&quot;}} &quot;World&quot;]]
 </code></pre>
-<p>See the list of available <a href="https://status.im/extensions/reference_views.html" target="_blank" rel="noopener">view components</a>.</p>
+<p>See the list of available <a href="https://status.im/extensions/reference_views.html">view components</a>.</p>
 <h2 id="Blocks" class="article-heading"><a href="#Blocks" class="headerlink" title="Blocks"></a>Blocks<a class="article-anchor" href="#Blocks" aria-hidden="true"></a></h2><p><a href="https://github.com/weavejester/hiccup/wiki/Syntax" target="_blank" rel="noopener">Hiccup syntax</a> is extended to provide templating features.</p>
 <h3 id="let-blocks" class="article-heading"><a href="#let-blocks" class="headerlink" title="let blocks"></a>let blocks<a class="article-anchor" href="#let-blocks" aria-hidden="true"></a></h3><p>The <code>let block</code> allows local variables to be used as <code>symbols</code> in a Hiccup tree.</p>
 <pre><code>(let [world &quot;World&quot;]
